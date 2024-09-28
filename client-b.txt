@@ -2,3 +2,24 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+Create map of warehouse
+
+Set customerLocation to coordinates (x,y)
+Set desiredLocation to coordinates (x,y)
+
+READ customerLocation
+IF customerLocation x is less than desiredLocation x THEN
+    PRINT "Move east."
+ELSE
+    PRINT "Move west."
+LOOP until customerLocation x EQUALS desiredLocation x
+
+READ customerLocation
+IF customerLocation y is less than desiredLocation y THEN
+    PRINT "Move north."
+ELSE 
+    PRINT "Move south."
+LOOP until customerLocation y EQUALS desiredLocation y
+
+IF customerLocation EQUALS desiredLocation 
+    PRINT "Congratulations! You've reached your destination!"

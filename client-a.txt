@@ -2,3 +2,24 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+SET variable randomNumber to randomly generated integer between 1-10
+SET number of guesses allowed to 3
+
+PRINT "I'm thinking of a random number between 1 and 10. You have 3 chances to guess it."
+
+READ playerGuess
+
+IF playerGuess is <1 OR >10 OR not an integer THEN
+    PRINT "Not a valid number. Please guess again."
+
+IF playerGuess equals randomNumber THEN
+    PRINT "Congratulations! You guessed the correct number!"
+ELSE
+    Decrease number of attempts left by 1
+    PRINT "Sorry, that's not the correct number. You have # attempts left."
+
+IF number of guesses left is >0 AND player has not guessed number THEN
+    LOOP until number of guesses equals 0 OR playerGuess equals randomNumber
+
+IF number of guesses equals 0 before playerGuess equals randomNumber THEN  
+    PRINT "Sorry, you've run out of guesses. Play again?"

@@ -2,3 +2,12 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+SET packageCount to 2
+
+SET LOOP 
+    WHILE packageCount is not greater than 50
+        PRINT packageCount
+        Increase packageCount by 2 with each scan
+    IF packageCount EQUALS 50
+        PRINT "This case is full. Start a new case."
+        RESET packageCount to 2
